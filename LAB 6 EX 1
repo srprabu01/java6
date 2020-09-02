@@ -1,0 +1,32 @@
+abstract class Shape{
+   int s1,s2;
+   abstract void printArea();
+ }
+public class Rectangle extends Shape{
+
+  public void printArea(){
+	System.out.println("Rectangle");
+   }
+}
+public class Triangle extends Shape{
+	
+    public void printArea(){
+	System.out.println("Triangle");
+   }
+}
+
+public class Circle extends Shape{
+     public void printArea(){
+	System.out.println("Circle");
+   }
+}
+public class Maincls{ 
+   public static void main(String args[]){
+	Shape r = new Rectangle();
+	r.printArea();
+	Shape t = new Triangle();
+	t.printArea();
+	Shape c= new Circle();
+	c.printArea();
+   }
+}

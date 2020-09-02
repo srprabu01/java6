@@ -1,0 +1,34 @@
+interface Printable{
+   abstract void print();
+ }
+public class Rectangle implements Printable{
+   	int length=8,breadth=5,area=10;
+ 	 public void print(){
+	System.out.println("length="+length",breadth="+breadth",area="+area);
+   }
+}
+public class Sportscar implements Printable{
+	String brandname="BMW",model="BMW 1-SERIES 118D HATCHBACK 2014";
+	int price=222200;
+   	public void print(){
+	System.out.println("brandname="+brandname",model="+model",price="+price);
+   }
+}
+
+public class Manager implements Printable{
+	String name="Ramakrishnan";
+	int employeID=123456,age=18,salary=700000
+  	 public void print(){
+	System.out.println("name="+name",employeID="+empoyeID",age="+age",salary="+salary);
+   }
+}
+public class Maincls { 
+   public static void main(String args[]){
+	Printable r = new Rectangle();
+	r.print();
+	Printable s = new Sportscar();
+	s.print();
+	Printable m= new Manager();
+	m.print();
+   }
+}
